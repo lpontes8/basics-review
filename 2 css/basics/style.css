@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.h1-vermelho {
+    color: red;
+    border: 1px solid blue;
+}
+
+#primeiro-h1 {
+    color: #008000;
+}
+
+p {
+    color: rgb(0,0,0,255,0.6);
+}
+
+.container {
+    background-color: #333;
+    color: #eee;
+    width: 80%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid red;
+}
+
+.box {
+    width: 80%;
+    margin: auto;
+}
+
+.main-aside h2 {
+    text-align: center;
+}
+.main-aside ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.main-aside ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-aside ul a:hover {
+    color: red;
+}
+
+.main-aside ul a:visited {
+    color: green;
+}
+
+.main-form {
+    padding-left: 20px;
+
+}
+
+.main-form .form-group {
+    padding-bottom: 10px;
+}
+
+.main-form .form-group label {
+    display: block;
+}
+
+.main-form .form-group input {
+    padding: 10px;
+}
+
+.button {
+    padding: 15px;
+    background-color: #333;
+    color: #eee;
+    border: none;
+}
+
+/* 
+POSITION:
+
+static: comum.
+relative: mover de acordo com top, right, left, bottom.
+absolute: em relação ao seu elemento pai mais próximo que possui position relative.
+fixed: em relação ao viewport. Mesma posição mesmo que a página for rolada.
+sticky: em elação ao scroll do usuário.
+*/
+
+.relative {
+    position: relative;
+    border: 3px solid #333;
+    height: 500px;
+    border-radius: 7px;
+}
+
+.relative .absolute{
+    position: absolute;
+    bottom: 0;
+}
+
+.relative .absolute h1 {
+    margin: 0;
+}
+
+/* Barra de navegação */
+
+#main-navbar {
+    background: #333;
+    color: #eee;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.fixed-button {
+    background: #333;
+    color: #eee;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+/* Pseudo-classes */
+
+.categories ul{
+    list-style: none;
+}
+
+.categories ul li:first-child {
+    color: red;
+}
+
+.categories ul li:last-child {
+    color: green;
+}
+
+.categories ul li:nth-child(3) {
+    color: blue;
+}
+
+.categories ul li:nth-child(even) {
+    color: yellow;
+}

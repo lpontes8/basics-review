@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Learning Page about ARIA">
+        <title>Studying ARIA</title>
+    </head>
+    <body>
+
+        <p aria-hidden="true">ARIA Hidden</p>
+        <!-- uses: svg; undefined -> the browser is responsible  
+         use JS to set .setAtribute('aria-hidden', false); when the element has to be shown. 
+
+        role: used to change the semantics
+        aria-label:
+        aria-expanded:
+        aria-labelledby: "idofthecaption"
+        aria-current:
+        -->
+        
+        <img src="" alt="" aria-labelledby="caption">
+        <figcaption id="caption">Image Caption</figcaption>
+
+        <img src="" alt="" role="button">
+        <!-- tabindex="o" to make a non-button behave like a button and can be interactive-->
+
+        <!--
+            Landmarks:
+            role=”banner”
+            role=”navigation” (e.g., a menu)
+            role=”main” (the main content of the page)
+            role=”complementary” (e.g., a sidebar)
+            role=”contentinfo” (meta data about the page, e.g., a copyright statement)
+            role=”search”
+            role=”form”
+            role=”application” (a web application with its own keyboard interface)
+            obs: header, main, footer
+        -->
+        <div role="banner">
+
+        </div>
+
+        <h2 id="social">Social links</h2>
+        <nav aria-labelledby="social"></nav>
+        
+        <h2 id="other">Other links</h2>
+        <nav aria-labelledby="other"></nav>
+
+        <section aria-label="jobs"></section>
+        <form role="search"></form>
+
+        <button>This is read by the screen reader </button>
+        <a href="">This is read by the screen reader</a>
+        <!-- 
+            AVOID PLACEHOLDERS, THEY COULD CONFUSE THE USER
+        -->
+
+
+      
+
+    </body>
+</html>

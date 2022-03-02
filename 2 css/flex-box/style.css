@@ -1,0 +1,61 @@
+/*
+display flex: Flexible Box Model, container lado a lado
+mais flexível e  dinâmico
+grande capacidade de responsividade
+*/
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.container div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*      FORMAS DE ALINHAMENTO
+
+--flex-direction: row -> Main axis: horizontal, cross axis: vertical
+    flex-direction: column -> contrário
+
+--justify-content: alinha os itens no main axia.
+    -flex-start: alinha no início do container
+    -flex-end: alinha no final do container   
+    -center: no meio baseado no main axis;
+    -space-between: espaço entre os items no main-axia
+    --pace-around: space between + margem externa (no main axis)    
+
+-- align-items: alinha is items no cross axia
+    -stretch: padrão, se estica, igualmente.
+    -flex-start: items alinhados no início.
+    -flex-end: no final do cros axis
+    -center: no centro do cross axis
+
+-- align-content: alinha as linhas do container verticalmente
+    -stretch: crescem igualmente
+    -flex-start: no início do container
+    -flex-end: n final do container
+    -center: no centro do container
+    -space-between: espaço entre as linhas iguais
+    -space-around: space-between + margens verticais
+
+*/
+
+/*  RESPONSIVIDADE (FLEX-FLOW)
+
+    nowrap: não permite a quebra de linha
+    wrap: quebra a linha assim que um dos itens não caiba nela
+    wrap-reverse: quebra par a alinha de cima.
+
+
+ */
+
+ /*     --FLEX ITEM--
+
+    order: ordem em que aparece no container;
+    flex: define o tamanho do elemento no main-axis baseado no tamanho do container (cresce até 7)
+    flex-basis: define o tamanho do elemento baseado no main-axis.
+ 
+    align-self: align-ittems que só se aplica ao item.
+ */
+
